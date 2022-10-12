@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, user-scalable=no,
+         initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"">
+        <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+<section>
+    <form id="form">
+        
+        <!-- Titulo -->
+        <div id="title-container">
+            <h1 id="title">Libreta de contactos</h1>
+            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg id="icon-title" height="512px" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="_x31_71_x2C__Contacts_x2C__Mane_x2C__Twitter"><g><g><path d="M410,410.498v16H90v-16c0-88.369,71.63-160,160-160c44.18,0,84.18,17.91,113.14,46.861     C392.09,326.318,410,366.318,410,410.498z" style="fill:#86DCFD;"/></g><g><circle cx="250" cy="166.499" r="83" style="fill:#FFD8A8;"/></g></g></g><g id="icon-title"/></svg>
+        </div>
+        <!-- Sub-titulo -->
+        <div id="cont-subt">
+            <h3 id="sub-title">Contactos</h3>
+        </div>
+        <!-- Inputs -->
+            <div class="container-input" >
+                Nombre: <input class="inputs" id="input-name" type="input-text" type="text" placeholder="Ingrese el nombre" autocomplete="off" required>   
+            </div>
+            <div class="container-input">
+                Telefono: <input class="inputs" id="input-num" type="input-text" type="tel" placeholder="Ingresar el numero" required autocomplete="off">
+                <p class="error">El formato debe ser xxx-xxxxxxx</p>
+            </div>
+            
+            <!-- Boton -->
+            
+            <button  id="crear-btn" type="submit" disabled>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id="btn">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z" />
+                </svg>          
+            </button>
+        </form>
+        
+        <!-- Lista -->
+        <div id="container-list">
+            <ul id="list">
+               
+            </ul>
+        </div>        
+</section>
+    <script src="index.js"></script>
+</body>
+</html>
